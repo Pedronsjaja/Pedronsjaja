@@ -1,4 +1,26 @@
-# Pedro Henrique
+<div align="center">
+
+<h1>👋 Pedro Henrique</h1>
+<p><strong>Do código ao hardware: robótica, sistemas embarcados e desenvolvimento web.</strong></p>
+<p><kbd>Python</kbd> <kbd>ROS 2</kbd> <kbd>ESP32</kbd> <kbd>C++</kbd> <kbd>Web</kbd></p>
+<p><a href="https://www.linkedin.com/in/pedro-henrique-b75207227/">LinkedIn</a> · <a href="https://github.com/Pedronsjaja?tab=repositories">Explorar projetos</a></p>
+
+</div>
+
+## 🧭 Explore por interesse
+
+| 🤖 Robótica | 🔌 Embarcados | 🖥️ Ferramentas |
+| --- | --- | --- |
+| [Laboratório Gaia / OP3](https://github.com/Pedronsjaja/gaia-humanoid-simulation) | [ESP Tool](https://github.com/Pedronsjaja/Hacking-tico-com-Esp32-s3) | [Leve11](https://github.com/Pedronsjaja/Leve11) |
+| ROS 2, Gazebo e integração | ESP32-S3, OLED e joystick | Otimização revisável do Windows 11 |
+
+## ✨ Projeto em destaque
+
+**[Leve11](https://github.com/Pedronsjaja/Leve11)** — perfis de RAM, comparação antes/depois, controle de inicialização, drivers e Microsoft Defender. Portátil, em português, com revisão das alterações e histórico de ajustes.
+
+[![Versão do Leve11](https://img.shields.io/github/v/release/Pedronsjaja/Leve11?style=flat-square&color=147d68)](https://github.com/Pedronsjaja/Leve11/releases/latest)
+
+---
 
 Robótica, sistemas embarcados e desenvolvimento web — conectando software, hardware e documentação técnica.
 
