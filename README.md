@@ -1,82 +1,67 @@
 # Pedro Henrique
 
-**Robótica, automação e engenharia aplicada — da modelagem mecânica ao software.**
+### Mechanical Engineering | Robotics | Automation | Digital Twins | Physical AI
 
-Trabalho com ROS 2, modelagem, telemetria e sistemas embarcados em projetos
-de equipe. Tenho interesse em automação e gêmeos digitais, conectando
-mecânica, aquisição de dados e simulação.
+I am a Mechanical Engineering student at **UFTM**, working on robotics and studying how physical machines, communication, simulation and intelligent software fit together.
 
-[LinkedIn](https://www.linkedin.com/in/pedro-henrique-b75207227/)
-· [Projetos públicos](https://github.com/Pedronsjaja?tab=repositories)
+My long-term direction is to design and understand the physical system, model its virtual counterpart, connect both reliably, measure the difference, and then explore intelligent behavior.
 
-## Projetos em destaque
+[LinkedIn](https://www.linkedin.com/in/pedro-henrique-b75207227/) · [Public repositories](https://github.com/Pedronsjaja?tab=repositories)
 
-### 1. Robótica e simulação — GAIA / OP3
+## Current Focus
 
-Laboratório com **ROS 2 Jazzy e Gazebo Harmonic** para explorar controle de
-juntas, câmera, IMU e comunicação entre componentes. Usa o ROBOTIS OP3 como
-modelo de referência; a simulação não representa uma validação física do GAIA.
+The diagram describes my learning and development direction. It is not an implemented end-to-end system.
 
-[Código](https://github.com/Pedronsjaja/gaia-humanoid-simulation)
-· [Executar o laboratório](https://github.com/Pedronsjaja/gaia-humanoid-simulation/blob/main/docs/simulacao/instalacao-e-laboratorio.md)
-· [Testes de simulação](https://github.com/Pedronsjaja/gaia-humanoid-simulation/actions/workflows/simulation.yml)
+```text
+Physical system
+      ↕
+Sensors / actuators / embedded systems
+      ↕
+ROS 2 / DDS  ·  OPC UA / MQTT (planned study)
+      ↕
+Digital Twin synchronization (planned)
+      ↕
+Gazebo  ·  Isaac Sim / OpenUSD (future evaluation)
+      ↕
+AI / perception / planning / autonomous systems (research direction)
+```
 
-### 2. Atuadores e aquisição de dados — bancada LX-225
+- **Building on:** Python actuator tooling, ROS 2/Gazebo simulation, mechanical CAD and telemetry.
+- **Studying:** communication architectures, DDS QoS, latency, jitter, state consistency and physical/virtual synchronization.
+- **Future experiments:** OPC UA/MQTT gateways, edge computing and Edge AI, sim-to-real, and autonomous behavior.
+- **Secondary track:** CAD/CAE automation and traceable CAD-to-simulation workflows.
 
-Ferramentas em **Python e comunicação serial** para consultar servos,
-registrar dados e conduzir ensaios. A calibração verifica modo e limites
-internos antes do movimento. Os testes automatizados usam serial simulada;
-limites mecânicos e validação física dependem da montagem.
+Physical AI is a long-term research direction here; no deployed learning-based controller is claimed.
 
-[Código e instruções](https://github.com/Pedronsjaja/gaia-lx225-buslinker)
-· [Validação da calibração](https://github.com/Pedronsjaja/gaia-lx225-buslinker/blob/main/docs/validacao-calibracao.md)
+## Selected Engineering Projects
 
-### 3. Mecânica e integração — estrutura do humanoide
+| Project | Current evidence | Next step |
+|---|---|---|
+| [GAIA Humanoid Simulation](https://github.com/Pedronsjaja/gaia-humanoid-simulation) | ROS 2 Jazzy/Gazebo Harmonic package using the ROBOTIS OP3 reference model, joint control, camera and IMU; automated simulation checks | Identify a GAIA joint and plan Digital Twin integration. The fixed-base OP3 lab is not a complete GAIA Digital Twin. |
+| [LX-225 / BusLinker Test Bench](https://github.com/Pedronsjaja/gaia-lx225-buslinker) | Python serial driver, position/voltage/temperature feedback, logging and mocked serial tests; velocity is estimated | A single-actuator physical/virtual experiment, starting with a documented ROS 2 interface |
+| [GAIA Humanoid Structure](https://github.com/Pedronsjaja/gaia-humanoid-structure) | Mechanical CAD assets, mounting guidance and a model-data checklist | Identify masses, joint axes, limits and provenance before CAD → URDF/USD → simulation |
+| [ROS 2 Environment](https://github.com/Pedronsjaja/gaia-ros2-ubuntu24) | Ubuntu 24.04/Jazzy setup and environment validation documentation | Record reproducible machine configurations for the experiments |
 
-Acervo **CAD e documentação de interfaces** para organizar a estrutura e
-preparar a identificação de juntas. O roteiro explicita as medidas ainda
-necessárias, como massa, inércia e limites mecânicos.
+## Physical AI Digital Twin Lab — Planned
 
-[Acervo e documentação](https://github.com/Pedronsjaja/gaia-humanoid-structure)
-· [Contrato de modelagem](https://github.com/Pedronsjaja/gaia-humanoid-structure/blob/main/docs/modelo-gaia.md)
+I am preparing **physical-ai-digital-twin-lab** as an experimental laboratory for robotics, distributed communication and physical/virtual synchronization.
 
-### 4. Sistemas embarcados — ESP Tool
+The first target is one virtual actuator, followed by an LX-225/BusLinker connection and a reproducible comparison of physical and virtual state. Architecture and experiment planning come before hardware integration, middleware benchmarks or AI. The repository has not yet been published.
 
-Firmware **C++/Arduino para ESP32-S3**, com OLED, joystick e ferramentas de
-diagnóstico de Wi-Fi/BLE. Inclui configuração PlatformIO e verificação de
-compilação; o hardware precisa corresponder à configuração documentada.
+## Team Contributions
 
-[Código e montagem](https://github.com/Pedronsjaja/Hacking-tico-com-Esp32-s3)
-· [Compilação automatizada](https://github.com/Pedronsjaja/Hacking-tico-com-Esp32-s3/actions/workflows/build.yml)
+- **GAIA Robotics:** team captain.
+- **Valkiriaz — H2 Challenge:** vice-president, contributing to ROS 2, Digital Twin, telemetry and modeling work.
+- **URASpace:** 3D modeling and physical rocket testing.
 
-## Atuação nas equipes
+Team projects involve multiple contributors. These roles do not imply sole authorship or independent validation of every system.
 
-- **GAIA Robótica:** atuação na capitania.
-- **Valkiriaz — H2 Challenge:** vice-presidência, com atuação em ROS 2,
-  gêmeos digitais, telemetria e modelagem.
-- **URASpace:** modelagem 3D e testes físicos do foguete.
+## Supporting Work
 
-Os projetos de equipe envolvem contribuições de várias pessoas. Minha
-atuação acima não implica autoria exclusiva dos sistemas ou resultados.
+[ESP32-S3 learning firmware](https://github.com/Pedronsjaja/Hacking-tico-com-Esp32-s3) ·
+[GeekMagic PC telemetry](https://github.com/Pedronsjaja/geekmagic_pc_monitor) ·
+[Leve11](https://github.com/Pedronsjaja/Leve11) ·
+[GAIA portal contributions](https://github.com/Pedronsjaja/portal-gaia) ·
+[GAIA website contributions](https://github.com/Pedronsjaja/gaiarobotica-new.github.io)
 
-## Outros trabalhos
-
-[Guia Ubuntu/ROS 2](https://github.com/Pedronsjaja/gaia-ros2-ubuntu24)
-· [Leve11](https://github.com/Pedronsjaja/Leve11)
-· [GeekMagic PC Monitor](https://github.com/Pedronsjaja/geekmagic_pc_monitor)
-
-Procuro documentar decisões, preservar dados brutos e distinguir testes
-automatizados, simulação e ensaios físicos. Sugestões técnicas e relatos de
-problemas reproduzíveis são bem-vindos nas Issues dos projetos.
-
-## English
-
-I focus on robotics, automation and applied engineering, connecting mechanical
-modeling, embedded systems and telemetry. My featured projects cover a
-ROS 2/Gazebo simulation lab, an LX-225 servo test bench, humanoid mechanical
-documentation and ESP32-S3 firmware. Simulation and automated tests are
-identified separately from physical validation.
-
-I serve in GAIA Robotics leadership, as vice-president of Valkiriaz
-(H2 Challenge), and contribute to URASpace through 3D modeling and physical
-rocket testing.
+I aim to preserve raw data, document engineering decisions, and distinguish **implemented**, **experimental**, **documented** and **planned** work. Software tests, simulation and physical validation are separate kinds of evidence.
