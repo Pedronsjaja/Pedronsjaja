@@ -42,11 +42,11 @@ Physical AI is a long-term research direction here; no deployed learning-based c
 | [GAIA Humanoid Structure](https://github.com/Pedronsjaja/gaia-humanoid-structure) | Mechanical CAD assets, mounting guidance and a model-data checklist | Identify masses, joint axes, limits and provenance before CAD → URDF/USD → simulation |
 | [ROS 2 Environment](https://github.com/Pedronsjaja/gaia-ros2-ubuntu24) | Ubuntu 24.04/Jazzy setup and environment validation documentation | Record reproducible machine configurations for the experiments |
 
-## Physical AI Digital Twin Lab — Planned
+## Physical AI Digital Twin Lab — Documented / Planned
 
-I am preparing **physical-ai-digital-twin-lab** as an experimental laboratory for robotics, distributed communication and physical/virtual synchronization.
+I am developing the architecture of [physical-ai-digital-twin-lab](https://github.com/Pedronsjaja/physical-ai-digital-twin-lab), an experimental laboratory for robotics, distributed communication and physical/virtual synchronization.
 
-The first target is one virtual actuator, followed by an LX-225/BusLinker connection and a reproducible comparison of physical and virtual state. Architecture and experiment planning come before hardware integration, middleware benchmarks or AI. The repository has not yet been published.
+The first target is one virtual actuator, followed by an LX-225/BusLinker connection and a reproducible comparison of physical and virtual state. Architecture and experiment planning come before hardware integration, middleware benchmarks or AI. The repository contains architecture, a research roadmap and initial Issues; runtime implementation is planned.
 
 ## Team Contributions
 
